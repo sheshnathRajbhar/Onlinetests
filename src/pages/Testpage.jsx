@@ -20,7 +20,7 @@ const Testpage = () => {
 />
           <h2 className="text-xl font-semibold text-gray-800 mb-2">IT Tools</h2>
           <p className="text-gray-600 mb-4">Master LibreOffice, email, internet, and more.</p>
-          <a href="/CourseDetails"><button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+          <a href="/Ittest"><button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
             Start Exam
           </button>
           </a>

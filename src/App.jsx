@@ -8,6 +8,7 @@ import CourseDetails from './components/CourseDetails'
 import CourseDetails2 from './components/CourseDetails2'
 import CourseDetails3 from './components/CourseDetails3'
 import CourseDetails4 from './components/CourseDetails4'
+import Ittest from './components/Ittest'
 import Testpage from './pages/Testpage'
 
 import Certificate from './pages/Certificate'
@@ -29,6 +30,7 @@ const App = () => {
     
            <Route path="/Certificate" element={<Certificate/>} />
             <Route path="/Contact" element={<Contact/>} />
+             <Route path="/Ittest" element={<Ittest/>} />
        
       
     </Routes>
