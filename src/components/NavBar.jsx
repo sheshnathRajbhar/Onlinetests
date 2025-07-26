@@ -13,13 +13,13 @@ const NavBar = () => {
             <a href="/courses" className="hover:text-blue-600">Courses</a>
           </li>
           <li>
-            <a href="#tests" className="hover:text-blue-600">Tests</a>
+            <a href="/TestIot" className="hover:text-blue-600">Tests</a>
           </li>
           <li>
-            <a href="#certificates" className="hover:text-blue-600">Certificates</a>
+            <a href="/Certificate" className="hover:text-blue-600">Certificates</a>
           </li>
           <li>
-            <a href="#contact" className="hover:text-blue-600">Contact</a>
+            <a href="/Contact" className="hover:text-blue-600">Contact</a>
           </li>
         </ul>
       </div>

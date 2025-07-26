@@ -40,6 +40,11 @@ const Courses = () => {
 
         {/* IoT (NEW COURSE) */}
         <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <img
+  src="/assets/iot.jfif"
+  alt="IoT Banner"
+  className="w-full rounded-md mb-6"
+/>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">IoT (Internet of Things)</h2>
           <p className="text-gray-600 mb-4">Explore sensors, automation, and smart devices.</p>
          <a href="/CourseDetails4"><button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">

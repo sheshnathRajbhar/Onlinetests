@@ -36,9 +36,9 @@ const CourseDetails = () => {
 
         {/* CTA Button */}
         <div className="text-center mt-6">
-          <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+          <a href="https://olevelexam.com/information-technology-tools-and-network-basics"><button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
             Start Learning
-          </button>
+          </button></a>
         </div>
 
         {/* Back to Courses */}
