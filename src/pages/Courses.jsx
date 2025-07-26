@@ -1,4 +1,8 @@
 import React from "react";
+import it from "../assets/it.webp"
+import web from "../assets/web.webp"
+import python from "../assets/python.jfif"
+import iot from "../assets/iot.webp"
 
 const Courses = () => {
   return (
@@ -9,6 +13,11 @@ const Courses = () => {
 
          {/* IT Tools */}
         <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                   <img
+  src={it}
+  alt="IoT Banner"
+  className="w-full rounded-md mb-6"
+/>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">IT Tools</h2>
           <p className="text-gray-600 mb-4">Master LibreOffice, email, internet, and more.</p>
           <a href="/CourseDetails"><button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
@@ -20,6 +29,11 @@ const Courses = () => {
 
         {/* Web Development */}
         <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                   <img
+  src={web}
+  alt="IoT Banner"
+  className="w-full rounded-md mb-6"
+/>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">Web Development</h2>
           <p className="text-gray-600 mb-4">Learn HTML, CSS, JavaScript, and React.</p>
           <a href="/CourseDetails2"><button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
@@ -29,6 +43,11 @@ const Courses = () => {
 
         {/* Python Programming */}
         <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                   <img
+  src={python}
+  alt="IoT Banner"
+  className="w-full rounded-md mb-6"
+/>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">Python Programming</h2>
           <p className="text-gray-600 mb-4">Start from basics to advanced Python topics.</p>
           <a href="/CourseDetails3"><button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
@@ -41,7 +60,7 @@ const Courses = () => {
         {/* IoT (NEW COURSE) */}
         <div className="bg-white rounded-lg shadow-md p-6 text-center">
           <img
-  src="/assets/iot.jfif"
+  src={iot}
   alt="IoT Banner"
   className="w-full rounded-md mb-6"
 />

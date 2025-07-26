@@ -100,7 +100,7 @@ const Contact = () => {
               <a href="https://twitter.com" target="_blank" rel="noreferrer">
                 <FaTwitter className="hover:text-blue-800" />
               </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer">
+              <a href="https://github.com/sheshnathRajbhar" target="_blank" rel="noreferrer">
                 <FaGithub className="hover:text-blue-800" />
               </a>
             </div>

@@ -13,7 +13,7 @@ const NavBar = () => {
             <a href="/courses" className="hover:text-blue-600">Courses</a>
           </li>
           <li>
-            <a href="/TestIot" className="hover:text-blue-600">Tests</a>
+            <a href="/Testpage" className="hover:text-blue-600">Tests</a>
           </li>
           <li>
             <a href="/Certificate" className="hover:text-blue-600">Certificates</a>
