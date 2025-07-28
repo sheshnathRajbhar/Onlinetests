@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+
 import it from "../assets/it.webp"
 import web from "../assets/web.webp"
 import python from "../assets/python.jfif"
 import iot from "../assets/iot.webp"
+import axios from "axios"
+
 
 const Testpage = () => {
+  const [data,setData]=useState({})
+  const fetchData=async()=>{
+    const res=await axios.get("https://jsonplaceholder.typicode.com/users")
+    console.log(res.data)
+  }
+  fetchData()
   return (
     <div className="min-h-screen bg-gray-100 px-4 py-10">
       <h1 className="text-3xl font-bold text-center text-blue-700 mb-6">Start Your Exam</h1>

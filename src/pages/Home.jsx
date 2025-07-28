@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import it from "../assets/it.webp"
 import web from "../assets/web.webp"
 import python from "../assets/python.jfif"
 import iot from "../assets/iot.webp"
-
+import axios from "axios";
 const Home = () => {
+
+  const [data, setData] = useState({})
+
+  const fetchData = async()=>{
+      const res = await axios.post('http://localhost:3500',{name:"hello",pass:"123538503"})
+      setData(res.data)
+      console.log(res.data)
+  }
+
+  const postData = async()=>{
+    const res = await axios.get('http://localhost:3500')
+    console.log(res.data)
+  }
+
+  fetchData()
+  postData()
+  
   return (
     <div className="min-h-screen bg-gray-100 mt-10">
       {/* Main Content */}
@@ -16,7 +33,7 @@ const Home = () => {
               Your gateway to easy and interactive learning
             </p>
           </header>
-
+            
           <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white shadow-md rounded-lg p-6">
               <h2 className="text-xl font-semibold text-gray-800">📚 Courses</h2>

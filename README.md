@@ -1,12 +1,49 @@
-# React + Vite
+# backend setup =>npm init -y 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# npm install express mongoose dotenv cors
+# Templete Basics Server
+# [const express=require('express')
+const cors=require('cors')
+const app=express()
+const port=4000
+app.use(cors())
+app.use(express.json())
 
-Currently, two official plugins are available:
+app.get("/",(req,res)=>{
+res.json({name:"sheshnath",password:"12345"})
+})
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+app.post("/",(req,res)=>{
+    console.log(req.body)
+})
+app.listen(port,()=>{
+    console.log(`App is runniung:${port}`)
+})]
 
-## Expanding the ESLint configuration
+# How to connect backend to frontend
+# import React, { useState } from "react";
+# import axios from "axios"
+# [const [data,setData]=useState({})
+  const fetchData=async()=>{
+    const res=await axios.get("https://jsonplaceholder.typicode.com/users")
+    console.log(res.data)
+  }
+  fetchData()]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+  """
+  const postData = async()=>{
+    const res = await axios.post('url', {name:"", password:""})
+    console.log(res.data)
+  }
+
+  """
+
+  <pre>
+ <code>
+const postData = async()=>{
+    const res = await axios.post('url', {name:"", password:""})
+    console.log(res.data)
+  }
+ </code>
+  </pre>
