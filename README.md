@@ -3,6 +3,9 @@
 # npm install express mongoose dotenv cors
 # Templete Basics Server
 # [const express=require('express')
+<pre>
+
+<code>
 const cors=require('cors')
 const app=express()
 const port=4000
@@ -19,25 +22,31 @@ app.post("/",(req,res)=>{
 app.listen(port,()=>{
     console.log(`App is runniung:${port}`)
 })]
+</code>
+</pre>
 
 # How to connect backend to frontend
 # import React, { useState } from "react";
 # import axios from "axios"
-# [const [data,setData]=useState({})
+
+
+  <pre>
+ <code>
+const [data,setData]=useState({})
   const fetchData=async()=>{
     const res=await axios.get("https://jsonplaceholder.typicode.com/users")
     console.log(res.data)
   }
-  fetchData()]
+  fetchData()
 
 
-  """
+
   const postData = async()=>{
     const res = await axios.post('url', {name:"", password:""})
     console.log(res.data)
   }
-
-  """
+ </code>
+  </pre>
 
   <pre>
  <code>
