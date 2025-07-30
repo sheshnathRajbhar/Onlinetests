@@ -13,6 +13,7 @@ import Testpage from './pages/Testpage'
 
 import Certificate from './pages/Certificate'
 import Contact from './pages/Contact'
+import UploadQuestion from './components/UploadQuestion'
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
            <Route path="/Certificate" element={<Certificate/>} />
             <Route path="/Contact" element={<Contact/>} />
              <Route path="/Ittest" element={<Ittest/>} />
+             <Route path="/UploadQuestion" element={<UploadQuestion/>} />
        
       
     </Routes>
